@@ -37,4 +37,4 @@ for file in list_csv:
   read = pd.read_csv(file)
   all = all.append(read, ignore_index=True)
 
-#df.to_csv('demanda2011_2022.csv')
+#all.to_csv('demanda2011_2022.csv')
