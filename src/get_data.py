@@ -38,3 +38,8 @@ for file in list_csv:
   all = all.append(read, ignore_index=True)
 
 #all.to_csv('demanda2011_2022.csv')
+"""
+To get, only the columns needed into one parquet 
+all = all.drop(['Unnamed: 0', 'percentage', 'Unnamed: 0.1'], axis=1)
+all.to_parquet('demanda2011_2022.gzip', index=False)
+"""
